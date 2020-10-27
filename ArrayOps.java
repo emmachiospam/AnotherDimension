@@ -54,6 +54,8 @@ public class ArrayOps{
     }
     return colsSumMatrix;
   }
+
+  
   public static boolean isRowMagic(int[][] matrix) {
     int[] testMatrix = sumRows(matrix);
     for(int i = 0; i < testMatrix.length; i++) {
@@ -64,5 +66,15 @@ public class ArrayOps{
     return true;
   }
 
+
+  public static boolean isColMagic(int[][] matrix) {
+    int[] testMatrix2 = sumCols(matrix);
+    for(int i = 0; i < testMatrix2.length; i++) {
+      if (testMatrix2[0] != testMatrix2[i]) {
+        return false;
+      }
+    }
+    return true;
+  }
 
 }
