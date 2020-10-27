@@ -10,6 +10,7 @@ public class Tester {
     // System.out.println(arrToString(ArrayOps.largestInRows(a)));
     // System.out.println(ArrayOps.sum(b));
     // System.out.println(arrToString(ArrayOps.sumCols(a)));
+    System.out.println(ArrayOps.isRowMagic(a));
   }
 
   public static String arrToString(int[] arr){
