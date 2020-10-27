@@ -24,11 +24,7 @@ public class ArrayOps{
   public static int[] sumRows(int[][] matrix) {
     int[] sumMatrix = new int[matrix.length];
     for(int i = 0; i < matrix.length; i++) {
-      int sum = 0;
-      for(int j = 0; j < matrix[i].length; j++) {
-        sum = sum + matrix[i][j];
-      }
-      sumMatrix[i] = sum;
+      sumMatrix[i] = sum(matrix[i]);
     }
     return sumMatrix;
   }
@@ -36,15 +32,15 @@ public class ArrayOps{
   public static  int[] largestInRows(int[][] matrix) {
     int[] largestMatrix = new int[matrix.length];
     for(int i = 0; i < matrix.length; i++) {
-      int max = matrix[i][0];
-      for(int j = 0; j < matrix[i].length; j++) {
-        if(matrix[i][j] > max) {
-          max = matrix[i][j];
-        }
-      }
-      largestMatrix[i] = max;
+      largestMatrix[i] = largest(matrix[i]);
     }
     return largestMatrix;
   }
+
+  // public static  int sum(int[][] arr) {
+  //   int[] totalSumMatrix = sumRows
+  // }
+
+
 
 }
