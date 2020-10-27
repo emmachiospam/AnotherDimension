@@ -37,9 +37,11 @@ public class ArrayOps{
     return largestMatrix;
   }
 
-  // public static  int sum(int[][] arr) {
-  //   int[] totalSumMatrix = sumRows
-  // }
+  public static int sum(int[][] arr) {
+    int[] totalSumMatrix = sumRows(arr);
+    int sum = sum(totalSumMatrix);
+    return sum;
+  }
 
 
 
