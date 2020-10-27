@@ -6,7 +6,8 @@ public class Tester {
     // System.out.println(ArrayOps.sum(a));
     // System.out.println(ArrayOps.largest(a));
     // System.out.println(arrToString(ArrayOps.sumRows(a)));
-    System.out.println(arrToString(ArrayOps.largestInRows(a)));
+    // System.out.println(arrToString(ArrayOps.largestInRows(a)));
+    System.out.println(ArrayOps.sum(b));
   }
 
   public static String arrToString(int[] arr){
