@@ -11,6 +11,7 @@ public class Tester {
     // System.out.println(ArrayOps.sum(b));
     // System.out.println(arrToString(ArrayOps.sumCols(a)));
     System.out.println(ArrayOps.isRowMagic(a));
+    System.out.println(ArrayOps.isColMagic(a));
   }
 
   public static String arrToString(int[] arr){
