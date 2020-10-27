@@ -4,7 +4,8 @@ public class Tester {
     int[][] a = {{1,2,10}, {2,2,2}, {2,3,4}};
     // System.out.println(ArrayOps.sum(a));
     // System.out.println(ArrayOps.largest(a));
-    System.out.println(arrToString(ArrayOps.sumRows(a)));
+    // System.out.println(arrToString(ArrayOps.sumRows(a)));
+    System.out.println(arrToString(ArrayOps.largestInRows(a)));
   }
 
   public static String arrToString(int[] arr){
