@@ -33,4 +33,18 @@ public class ArrayOps{
     return sumMatrix;
   }
 
+  public static  int[] largestInRows(int[][] matrix) {
+    int[] largestMatrix = new int[matrix.length];
+    for(int i = 0; i < matrix.length; i++) {
+      int max = matrix[i][0];
+      for(int j = 0; j < matrix[i].length; j++) {
+        if(matrix[i][j] > max) {
+          max = matrix[i][j];
+        }
+      }
+      largestMatrix[i] = max;
+    }
+    return largestMatrix;
+  }
+
 }
